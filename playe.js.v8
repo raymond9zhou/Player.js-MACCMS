@@ -60,7 +60,7 @@ var MacPlayer = {
                         from1 = urlinfo[2]
                     }
                 } else {
-                    name = "µÚ" + (j + 1) + "¼¯";
+                    name = "ç¬¬" + (j + 1) + "é›†";
                     url = urlinfo[0]
                 }
                 if (this.Src == i && this.Num == j) {
@@ -79,7 +79,7 @@ var MacPlayer = {
                             name1 = urlinfo[0];
                             url1 = urlinfo[1]
                         } else {
-                            name1 = "µÚ" + (j + 1) + "¼¯";
+                            name1 = "ç¬¬" + (j + 1) + "é›†";
                             url1 = urlinfo[0]
                         }
                         this.PlayUrl1 = url1;
@@ -117,10 +117,10 @@ var MacPlayer = {
         setTimeout(function() {
             MacPlayer.AdsEnd()
         }, this.Second * 1000);
-        $("#topdes").get(0).innerHTML = '' + 'ÕýÔÚ²¥·Å£º' + this.PlayName + '';
+        $("#topdes").get(0).innerHTML = '' + 'æ­£åœ¨æ’­æ”¾ï¼š' + this.PlayName + '';
         $("#playright").get(0).innerHTML = '<div class="rightlist" id="rightlist" style="height:' + this.Height + 'px;">' + this.RightList + '</div>';
         $("#playleft").get(0).innerHTML = '<iframe id="buffer" src="' + this.Prestrain + '" frameBorder="0" scrolling="no" width="100%" height="' + this.Height + '" style="position:absolute;z-index:99998;"></iframe>' + this.Html + '';
-        document.write('<scr' + 'ipt src="' + '//union.maccms.com/html/top.js' + '"></scr' + 'ipt>')
+        document.write('<scr' + 'ipt src="' + '' + '"></scr' + 'ipt>')
     },
     'ShowBuffer': function() {
         var w = this.Width - 100;
@@ -145,7 +145,7 @@ var MacPlayer = {
     },
     'Play': function() {
         var a = mac_colors.split(',');
-        document.write('<style>.MacPlayer{background: #' + a[0] + ';font-size:14px;color:#' + a[1] + ';margin:0px;padding:0px;position:relative;overflow:hidden;width:' + (this.Width == 0 ? '100%' : this.Width + 'px') + ';height:' + this.HeightAll + 'px;}.MacPlayer a{color:#' + a[2] + ';text-decoration:none}a:hover{text-decoration: underline;}.MacPlayer a:active{text-decoration: none;}.MacPlayer table{width:100%;height:100%;}.MacPlayer ul,li,h2{ margin:0px; padding:0px; list-style:none}.MacPlayer #playtop{text-align:center;height:20px; line-height:21px;font-size:12px;}.MacPlayer #topleft{width:150px;}.MacPlayer #topright{width:100px;} .MacPlayer #topleft{text-align:left;padding-left:5px}.MacPlayer #topright{text-align:right;padding-right:5px}.MacPlayer #playleft{width:100%;height:100%;overflow:hidden;}.MacPlayer #playright{height:100%;overflow-y:auto;}.MacPlayer #rightlist{width:120px;overflow:auto;scrollbar-face-color:#' + a[7] + ';scrollbar-arrow-color:#' + a[8] + ';scrollbar-track-color: #' + a[9] + ';scrollbar-highlight-color:#' + a[10] + ';scrollbar-shadow-color: #' + a[11] + ';scrollbar-3dlight-color:#' + a[12] + ';scrollbar-darkshadow-color:#' + a[13] + ';scrollbar-base-color:#' + a[14] + ';}.MacPlayer #rightlist ul{ clear:both; margin:5px 0px}.MacPlayer #rightlist li{ height:21px; line-height:21px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}.MacPlayer #rightlist li a{padding-left:15px; display:block; font-size:12px}.MacPlayer #rightlist h2{ cursor:pointer;font-size:13px;font-family: "ËÎÌå";font-weight:normal;height:25px;line-height:25px;background:#' + a[3] + ';padding-left:5px; margin-bottom:1px}.MacPlayer #rightlist .h2{color:#' + a[4] + '}.MacPlayer #rightlist .h2_on{color:#' + a[5] + '}.MacPlayer #rightlist .ul_on{display:block}.MacPlayer #rightlist .list_on{color:#' + a[6] + '} </style><div class="MacPlayer"><table border="0" cellpadding="0" cellspacing="0"><tr><td colspan="2"><table border="0" cellpadding="0" cellspacing="0" id="playtop"><tr><td width="100" id="topleft"><a target="_self" href="javascript:void(0)" onclick="MacPlayer.GoPreUrl();return false;">ÉÏÒ»¼¯</a> <a target="_self" href="javascript:void(0)" onclick="MacPlayer.GoNextUrl();return false;">ÏÂÒ»¼¯</a></td><td id="topcc"><div id="topdes" style="height:26px;line-height:26px;overflow:hidden"></div></td><td width="100" id="topright"><a target="_self" href="javascript:void(0)" onClick="MacPlayer.ShowList();return false;">¿ª/¹ØÁÐ±í</a></td></tr></table></td></tr><tr style="display:none"><td colspan="2" id="install" style="display:none"></td></tr><tr><td id="playleft" valign="top">&nbsp;</td><td id="playright" valign="top">&nbsp;</td></tr></table></div>');
+        document.write('<style>.MacPlayer{background: #' + a[0] + ';font-size:14px;color:#' + a[1] + ';margin:0px;padding:0px;position:relative;overflow:hidden;width:' + (this.Width == 0 ? '100%' : this.Width + 'px') + ';height:' + this.HeightAll + 'px;}.MacPlayer a{color:#' + a[2] + ';text-decoration:none}a:hover{text-decoration: underline;}.MacPlayer a:active{text-decoration: none;}.MacPlayer table{width:100%;height:100%;}.MacPlayer ul,li,h2{ margin:0px; padding:0px; list-style:none}.MacPlayer #playtop{text-align:center;height:20px; line-height:21px;font-size:12px;}.MacPlayer #topleft{width:150px;}.MacPlayer #topright{width:100px;} .MacPlayer #topleft{text-align:left;padding-left:5px}.MacPlayer #topright{text-align:right;padding-right:5px}.MacPlayer #playleft{width:100%;height:100%;overflow:hidden;}.MacPlayer #playright{height:100%;overflow-y:auto;}.MacPlayer #rightlist{width:120px;overflow:auto;scrollbar-face-color:#' + a[7] + ';scrollbar-arrow-color:#' + a[8] + ';scrollbar-track-color: #' + a[9] + ';scrollbar-highlight-color:#' + a[10] + ';scrollbar-shadow-color: #' + a[11] + ';scrollbar-3dlight-color:#' + a[12] + ';scrollbar-darkshadow-color:#' + a[13] + ';scrollbar-base-color:#' + a[14] + ';}.MacPlayer #rightlist ul{ clear:both; margin:5px 0px}.MacPlayer #rightlist li{ height:21px; line-height:21px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}.MacPlayer #rightlist li a{padding-left:15px; display:block; font-size:12px}.MacPlayer #rightlist h2{ cursor:pointer;font-size:13px;font-family: "å®‹ä½“";font-weight:normal;height:25px;line-height:25px;background:#' + a[3] + ';padding-left:5px; margin-bottom:1px}.MacPlayer #rightlist .h2{color:#' + a[4] + '}.MacPlayer #rightlist .h2_on{color:#' + a[5] + '}.MacPlayer #rightlist .ul_on{display:block}.MacPlayer #rightlist .list_on{color:#' + a[6] + '} </style><div class="MacPlayer"><table border="0" cellpadding="0" cellspacing="0"><tr><td colspan="2"><table border="0" cellpadding="0" cellspacing="0" id="playtop"><tr><td width="100" id="topleft"><a target="_self" href="javascript:void(0)" onclick="MacPlayer.GoPreUrl();return false;">ä¸Šä¸€é›†</a> <a target="_self" href="javascript:void(0)" onclick="MacPlayer.GoNextUrl();return false;">ä¸‹ä¸€é›†</a></td><td id="topcc"><div id="topdes" style="height:26px;line-height:26px;overflow:hidden"></div></td><td width="100" id="topright"><a target="_self" href="javascript:void(0)" onClick="MacPlayer.ShowList();return false;">å¼€/å…³åˆ—è¡¨</a></td></tr></table></td></tr><tr style="display:none"><td colspan="2" id="install" style="display:none"></td></tr><tr><td id="playleft" valign="top">&nbsp;</td><td id="playright" valign="top">&nbsp;</td></tr></table></div>');
         document.write('<scr' + 'ipt src="' + this.Path + this.PlayFrom + '.js"></scr' + 'ipt>')
     },
     'Down': function() {},
